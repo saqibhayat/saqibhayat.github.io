@@ -166,9 +166,9 @@ button,a{transition:.25s ease}
 .game-copy h3,.platform-card h3,.lead-feature h3,.lead-list h3{font-size:1.75rem;line-height:1.12;letter-spacing:-.035em;margin:17px 0}
 .game-copy p,.platform-card p,.lead-feature p,.lead-list p{color:#98a3b3}
 .mini-gallery{height:290px;position:relative;overflow:hidden;background:radial-gradient(circle at 35% 35%,rgba(143,124,255,.3),transparent 38%),#101722}
-.mini-gallery>img:not(.game-icon),.mini-gallery>video{width:56%;height:115%;position:absolute;right:12%;top:8%;object-fit:cover;object-position:top;border:4px solid #191e28;border-radius:22px;transform:rotate(6deg);box-shadow:0 22px 50px rgba(0,0,0,.5)}
-.mini-gallery>video{background:#05070b}
-.mini-gallery>video:focus{outline:3px solid var(--green);outline-offset:-3px}
+.mini-gallery>img:not(.game-icon),.mini-gallery>iframe{width:64%;height:82%;position:absolute;right:7%;top:10%;object-fit:cover;object-position:top;border:4px solid #191e28;border-radius:18px;box-shadow:0 22px 50px rgba(0,0,0,.5)}
+.mini-gallery>iframe{background:#05070b}
+.mini-gallery>iframe:focus{outline:3px solid var(--green);outline-offset:-3px}
 .mini-gallery>.game-icon{position:absolute;z-index:2;left:26px;top:26px}
 .platform-card{margin-top:22px;display:grid;grid-template-columns:1.08fr .92fr;min-height:430px;overflow:hidden;border:1px solid rgba(119,240,181,.18);border-radius:24px;background:linear-gradient(120deg,rgba(119,240,181,.07),rgba(143,124,255,.06))}
 .platform-visual{position:relative;min-height:430px;display:grid;place-items:center;overflow:hidden;background:radial-gradient(circle at 25% 22%,rgba(119,240,181,.21),transparent 32%),linear-gradient(145deg,#122334,#101320)}
@@ -193,6 +193,12 @@ button,a{transition:.25s ease}
 .lead-list>article>strong{font-size:1.4rem;color:var(--accent)}.lead-list h3{font-size:1.08rem;margin:0 0 7px}.lead-list p{font-size:.86rem;margin:0}
 .role-head{display:flex;gap:14px;align-items:baseline;flex-wrap:wrap}.role-head h3{margin:0}.role-head span{color:var(--green);font-size:.83rem;font-weight:750}
 .education-row .timeline-pin{background:var(--green)}
+.hero-highlights{border:1px solid var(--line);border-radius:24px;background:radial-gradient(circle at 100% 0,rgba(143,124,255,.2),transparent 34%),linear-gradient(145deg,#111722,#0a0e15);box-shadow:0 30px 80px rgba(0,0,0,.38);overflow:hidden}
+.highlight-intro{padding:34px 34px 26px}.highlight-intro .kicker{color:var(--green);margin-bottom:14px}.highlight-intro h2{font-size:2.3rem;line-height:1;letter-spacing:-.045em;margin:0}.highlight-intro>p:last-child{color:#8e99aa;font-size:.9rem;margin:18px 0 0}
+.highlight-list{border-top:1px solid var(--line)}.highlight-list article{display:grid;grid-template-columns:42px 1fr;gap:15px;padding:20px 34px;border-bottom:1px solid var(--line)}.highlight-list article>span{color:var(--accent);font-size:.7rem;font-weight:800;letter-spacing:.12em;padding-top:3px}.highlight-list strong{display:block;font-size:.95rem}.highlight-list p{color:#8490a2;font-size:.8rem;line-height:1.45;margin:5px 0 0}
+.highlight-footer{display:flex;gap:8px;flex-wrap:wrap;padding:20px 34px}.highlight-footer span{padding:6px 9px;border:1px solid var(--line);border-radius:8px;color:#aeb7c6;font-size:.68rem;font-weight:750;text-transform:uppercase;letter-spacing:.08em}
+@media(max-width:900px){.hero-highlights{max-width:620px}.mini-gallery>iframe{width:72%}}
+@media(max-width:620px){.highlight-intro{padding:28px 24px 22px}.highlight-intro h2{font-size:2rem}.highlight-list article{padding:18px 24px}.highlight-footer{padding:18px 24px}.mini-gallery>iframe{width:68%;right:4%}}
 @media(max-width:900px){.game-card-wide,.lead-grid,.platform-card{grid-template-columns:1fr}.game-media{min-height:440px}.platform-path{justify-content:flex-start}}
 @media(max-width:620px){.game-grid{grid-template-columns:1fr}.game-copy{padding:28px}.game-media{min-height:360px}.shot-fan{height:310px;width:90%}.shot-fan img{height:290px}.mini-gallery{height:250px}.platform-visual{min-height:350px}.platform-shots{height:310px;width:92%}.platform-shots img{height:280px}.platform-copy{padding:28px}.lead-feature{padding:28px}.lead-list article{grid-template-columns:55px 1fr}.role-head{display:block}.role-head span{display:block;margin-top:4px}.game-card-wide{grid-column:auto}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
