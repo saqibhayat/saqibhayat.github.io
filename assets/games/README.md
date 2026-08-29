@@ -14,3 +14,14 @@ These local images were downloaded from official public Google Play listings on
 
 All product names, icons, and screenshots remain the property of their
 respective publishers and are included here as portfolio evidence.
+
+## Archived video
+
+| File | Official source | Notes |
+| --- | --- | --- |
+| `qwert/trailer.mp4` | Google Play-hosted trailer for `com.karatepossum.qwert` | Local 720p store clip |
+| `go-operative/trailer.mp4` | https://www.youtube.com/watch?v=qyldiub0zHg | Official publisher trailer, locally archived at 360p |
+
+The public Piggy Panda trailer previously indexed on YouTube was unavailable
+when video archiving was performed, so no unrelated or unofficial footage was
+substituted.
