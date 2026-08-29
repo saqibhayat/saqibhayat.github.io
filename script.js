@@ -27,3 +27,38 @@ window.addEventListener('scroll', () => {
     ? 'rgba(255,255,255,.14)'
     : 'rgba(255,255,255,.08)';
 }, { passive: true });
+
+const videoModal = document.getElementById('video-modal');
+const videoPlayer = document.getElementById('video-player');
+const videoTitle = document.getElementById('video-modal-title');
+const videoClose = videoModal?.querySelector('.video-close');
+const videoBackdrop = videoModal?.querySelector('.video-backdrop');
+let activeVideoTrigger = null;
+
+function closeVideo() {
+  if (!videoModal || videoModal.hidden) return;
+  videoModal.hidden = true;
+  document.body.classList.remove('video-open');
+  if (videoPlayer) videoPlayer.src = '';
+  activeVideoTrigger?.focus();
+  activeVideoTrigger = null;
+}
+
+document.querySelectorAll('.video-trigger').forEach((trigger) => {
+  trigger.addEventListener('click', () => {
+    if (!videoModal || !videoPlayer || !videoTitle) return;
+    activeVideoTrigger = trigger;
+    videoTitle.textContent = trigger.dataset.videoTitle || 'Game trailer';
+    videoPlayer.title = videoTitle.textContent;
+    videoPlayer.src = `https://www.youtube-nocookie.com/embed/${trigger.dataset.videoId}?autoplay=1&rel=0`;
+    videoModal.hidden = false;
+    document.body.classList.add('video-open');
+    videoClose?.focus();
+  });
+});
+
+videoClose?.addEventListener('click', closeVideo);
+videoBackdrop?.addEventListener('click', closeVideo);
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') closeVideo();
+});

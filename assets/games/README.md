@@ -26,3 +26,8 @@ Videos are embedded from YouTube rather than copied into the repository:
 
 The public Piggy Panda trailer previously indexed on YouTube was unavailable,
 so no unrelated or unofficial footage was substituted.
+
+Archived Google Play snapshots were also reviewed for Stress Tap Ease, Car
+Makeover, and Cooking ASMR. Their video IDs belonged to recommended apps rather
+than these portfolio titles, so they were intentionally excluded. No archived
+Google Play snapshot was available for Piggy Panda.
