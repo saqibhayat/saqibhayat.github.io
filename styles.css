@@ -168,8 +168,16 @@ button,a{transition:.25s ease}
 .mini-gallery{height:290px;position:relative;overflow:hidden;background:radial-gradient(circle at 35% 35%,rgba(143,124,255,.3),transparent 38%),#101722}
 .mini-gallery>img:not(.game-icon){width:56%;height:115%;position:absolute;right:12%;top:8%;object-fit:cover;object-position:top;border:4px solid #191e28;border-radius:22px;transform:rotate(6deg);box-shadow:0 22px 50px rgba(0,0,0,.5)}
 .mini-gallery>.game-icon{position:absolute;z-index:2;left:26px;top:26px}
-.platform-card{margin-top:22px;padding:34px;display:grid;grid-template-columns:1fr 1.4fr auto;gap:32px;align-items:center;border:1px solid rgba(119,240,181,.18);border-radius:20px;background:linear-gradient(120deg,rgba(119,240,181,.07),rgba(143,124,255,.06))}
-.platform-card .kicker{margin-bottom:8px;color:var(--green)}.platform-card h3{margin:0}.platform-card p{margin-bottom:0}
+.platform-card{margin-top:22px;display:grid;grid-template-columns:1.08fr .92fr;min-height:430px;overflow:hidden;border:1px solid rgba(119,240,181,.18);border-radius:24px;background:linear-gradient(120deg,rgba(119,240,181,.07),rgba(143,124,255,.06))}
+.platform-visual{position:relative;min-height:430px;display:grid;place-items:center;overflow:hidden;background:radial-gradient(circle at 25% 22%,rgba(119,240,181,.21),transparent 32%),linear-gradient(145deg,#122334,#101320)}
+.platform-visual>.game-icon{position:absolute;z-index:5;left:28px;top:28px}
+.platform-shots{position:relative;width:82%;height:380px}
+.platform-shots img{position:absolute;left:50%;top:52%;height:345px;max-width:62%;object-fit:cover;border:5px solid #18202b;border-radius:22px;box-shadow:0 25px 50px rgba(0,0,0,.46)}
+.platform-shots img:nth-child(1){transform:translate(-79%,-49%) rotate(-9deg)}
+.platform-shots img:nth-child(2){z-index:2;transform:translate(-50%,-53%)}
+.platform-shots img:nth-child(3){transform:translate(-21%,-49%) rotate(9deg)}
+.platform-copy{padding:42px;display:flex;flex-direction:column;justify-content:center}
+.platform-card .kicker{margin-bottom:8px;color:var(--green)}.platform-card h3{margin:0}.platform-card p{margin-bottom:24px}
 .platform-path,.agent-route{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap}
 .platform-path span,.agent-route span{padding:9px 11px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.035);font-size:.76rem}
 .platform-path b,.agent-route i{color:var(--green);font-style:normal}
@@ -183,6 +191,6 @@ button,a{transition:.25s ease}
 .lead-list>article>strong{font-size:1.4rem;color:var(--accent)}.lead-list h3{font-size:1.08rem;margin:0 0 7px}.lead-list p{font-size:.86rem;margin:0}
 .role-head{display:flex;gap:14px;align-items:baseline;flex-wrap:wrap}.role-head h3{margin:0}.role-head span{color:var(--green);font-size:.83rem;font-weight:750}
 .education-row .timeline-pin{background:var(--green)}
-@media(max-width:900px){.game-card-wide,.lead-grid{grid-template-columns:1fr}.game-media{min-height:440px}.platform-card{grid-template-columns:1fr}.platform-path{justify-content:flex-start}}
-@media(max-width:620px){.game-grid{grid-template-columns:1fr}.game-copy{padding:28px}.game-media{min-height:360px}.shot-fan{height:310px;width:90%}.shot-fan img{height:290px}.mini-gallery{height:250px}.platform-card{padding:26px}.lead-feature{padding:28px}.lead-list article{grid-template-columns:55px 1fr}.role-head{display:block}.role-head span{display:block;margin-top:4px}.game-card-wide{grid-column:auto}}
+@media(max-width:900px){.game-card-wide,.lead-grid,.platform-card{grid-template-columns:1fr}.game-media{min-height:440px}.platform-path{justify-content:flex-start}}
+@media(max-width:620px){.game-grid{grid-template-columns:1fr}.game-copy{padding:28px}.game-media{min-height:360px}.shot-fan{height:310px;width:90%}.shot-fan img{height:290px}.mini-gallery{height:250px}.platform-visual{min-height:350px}.platform-shots{height:310px;width:92%}.platform-shots img{height:280px}.platform-copy{padding:28px}.lead-feature{padding:28px}.lead-list article{grid-template-columns:55px 1fr}.role-head{display:block}.role-head span{display:block;margin-top:4px}.game-card-wide{grid-column:auto}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
